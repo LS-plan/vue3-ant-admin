@@ -1,26 +1,22 @@
 <template>
-  <div>
-    <todolist></todolist>
+  <div id="app" class="app">
+    <div class="title">
+      <h1>根组件</h1>
+    </div>
+    <div>
+      <router-view></router-view>
+    </div>
   </div>
-  <router-view></router-view>
 </template>
 
 <script>
-import todolist from './components/todolist';
-
 export default {
-  data() {
-    return {
-
-    }
-  },
-  components: {
-    todolist
-  }
-}
-
+  name: "App",
+};
 </script>
 
 <style>
-
+.title {
+  text-align: center;
+}
 </style>
